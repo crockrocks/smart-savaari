@@ -1,0 +1,118 @@
+/* index.css */
+
+body {
+  background-color: white; /* Set the background color to white */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #000000; /* Set the text color to black */
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #f39c12; /* Orange background color */
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  color: black; /* Set the navbar brand color to black */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: black; /* Set the navbar link color to black */
+  margin-right: 15px;
+  font-size: 1rem;
+}
+
+/* Home Component Styling */
+#title {
+  padding: 30px 0; /* Adjusted padding to 30px top and bottom */
+  position: relative;
+}
+
+.home-main-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #f39c12; /* Orange text color */
+}
+
+.logo {
+  width: 100%;
+}
+
+.btn-dark {
+  background-color: black; /* Set the button background color to black */
+  color: #f39c12; /* Orange text color */
+}
+
+.btn-light {
+  background-color: black; /* Set the button background color to black */
+  color: #f39c12; /* Orange text color */
+  border: 1px solid #f39c12; /* Orange border color */
+  margin-right: 10px; /* Add margin between the buttons */
+}
+
+.iphone {
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Adding Four Orange Balls Behind the Image */
+#title::before,
+#title::after,
+#ball1,
+#ball2 {
+  content: "";
+  position: absolute;
+  background-color: #f39c12; /* Orange color */
+  border-radius: 50%;
+}
+
+#title::before {
+  top: 40%;
+  left: 78%;
+  width: 170px;
+  height: 170px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#title::after {
+  top: 85%;
+  left: 75%;
+  width: 240px;
+  height: 240px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#ball1 {
+  top: 20%;
+  left: 70%;
+  width: 150px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#ball2 {
+  top: 60%;
+  left: 70%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
